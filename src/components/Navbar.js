@@ -23,7 +23,7 @@ const Navbar = () => {
     <div className="navbar navbar-dark bg-dark fixed-top">
       <div className="container py-2">
         <a href="/" className="navbar-brand">
-          Built on Tezoz
+          Built on Tezos
         </a>
         <div className="d-flex">
           {/* TODO 4.b - Call connectWallet function onClick  */}

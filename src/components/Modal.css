@@ -1,6 +1,6 @@
 .modalBackground {
     width: 100vw;
-    height: 100vh;
+    height: 130vh;
     background-color: rgba(0, 0, 0, 0.2);
     position: fixed;
     display: flex;
@@ -10,13 +10,13 @@
   
   .modalContainer {
     width: 400px;
-    height: 250px;
+    height: 305px;
     border-radius: 12px;
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     display: flex;
     flex-direction: column;
-    padding: 1px;
+    margin-bottom: 25%;
   }
   
   .modalContainer {
@@ -26,6 +26,10 @@
   .title {
     display: inline-block;
     text-align: center;
+    font-size: 20px;
+    font-style: italic;
+    font-family:sans-serif;
+
   }
   
   .titleCloseBtn {
@@ -43,6 +47,7 @@
   .modalContainer .body {
     flex: 50%;
     display: flex;
+    margin-top: 10%;
     justify-content: center;
     align-items: center;
     font-size: 1.7rem;
@@ -54,12 +59,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
+   margin-bottom: 12px;
   }
   
   .modalContainer .footer button {
     width: 100px;
     height: 35px;
-    margin: 10px;
+    margin: 5px;
     border: none;
     background-color: cornflowerblue;
     color: white;
@@ -71,13 +77,24 @@
   #cancelBtn {
     background-color: crimson;
   }
-  .address {
+  .address{
     display: block;
-    margin: auto;
     height: 30px;
-    width: 330px;
+    width: 250px;
+    margin-top: 30px;
     text-align: center;
-  }
+}
+input.address{
+  margin-bottom: 20px;
+}
+.address::placeholder{
+  font-family: sans-serif;
+  font-weight: 300;
+  font: size 5px;;
+  font-style: italic;
+  display: flex;
+  align-items: center;
+}
   
   input[type="text"]:focus {
     background-color: lightblue;

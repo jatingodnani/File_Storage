@@ -35,9 +35,6 @@ const Modal = ({ setModalOpen, contract }) => {
             ></input>
           </div>
           <form id="myForm">
-            <select id="selectNumber">
-              <option className="address">People With Access</option>
-            </select>
           </form>
           <div className="footer">
             <button
@@ -50,6 +47,9 @@ const Modal = ({ setModalOpen, contract }) => {
             </button>
             <button onClick={() => sharing()}>Share</button>
           </div>
+          <select id="selectNumber">
+              <option className="address">People With Access</option>
+            </select>
         </div>
       </div>
     </>

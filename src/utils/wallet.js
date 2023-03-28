@@ -21,3 +21,10 @@ export const getAccount = async () => {
         return "";
     }
 };
+
+export const logOut = async () => {
+    const connectedWallet = await wallet.client.getActiveAccount();
+    connectWallet.logOut;
+
+
+}

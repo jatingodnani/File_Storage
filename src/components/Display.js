@@ -2,7 +2,8 @@ import { useState } from "react";
 import "./Display.css";
 import { display_operation } from "../utils/operation";
 const Display = ({account,contract}) => {
-  const [data, setData] = useState("");
+  const [data, setData] = useState(""); 
+  console.log(data)
   const getdata = async () => {
     let dataArray;
     const Otheraddress = document.querySelector(".address").value;

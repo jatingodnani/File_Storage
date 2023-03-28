@@ -3,7 +3,7 @@ import {tezos} from "./tezos"
 
 export const addOperation = async (ImgHash) => {
     try{
-        const contract = await tezos.wallet.at("KT1BwoKYL4AU6h7X8i3VPndfGjqLVPvQfsed");
+        const contract = await tezos.wallet.at("KT1CXMpNtA2GMu35mbAWwnVfKvTjb8YoBsPz");
         const op =await contract.methods.add(ImgHash).send()
         await op.confirmation(1);
     }
@@ -16,7 +16,7 @@ export const addOperation = async (ImgHash) => {
 
 export const display_operation = async (address) => {
     try{
-        const contract = await tezos.wallet.at("KT1BwoKYL4AU6h7X8i3VPndfGjqLVPvQfsed")
+        const contract = await tezos.wallet.at("KT1CXMpNtA2GMu35mbAWwnVfKvTjb8YoBsPz")
         const op = await contract.methods.display(address).send()
         await op.confirmation(1)
     }
