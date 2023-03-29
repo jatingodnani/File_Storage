@@ -22,9 +22,9 @@ export const getAccount = async () => {
     }
 };
 
-export const logOut = async () => {
+/**export const logOut = async () => {
     const connectedWallet = await wallet.client.getActiveAccount();
     connectWallet.logOut;
 
 
-}
+}**/

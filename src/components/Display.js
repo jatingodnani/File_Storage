@@ -3,7 +3,7 @@ import "./Display.css";
 import { display_operation } from "../utils/operation";
 const Display = ({account,contract}) => {
   const [data, setData] = useState(""); 
-  console.log(data)
+
   const getdata = async () => {
     let dataArray;
     const Otheraddress = document.querySelector(".address").value;
@@ -49,7 +49,7 @@ const Display = ({account,contract}) => {
         placeholder="Enter Other Address"
         className="address"
       ></input>
-      <button className="center button" onClick={getdata}>
+      <button className="center button data" onClick={getdata}>
         Get Others Data
       </button>
       <div className="image-list">{data}</div>
