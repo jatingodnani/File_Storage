@@ -27,10 +27,12 @@ const Navbar = () => {
         </a>
         <div className="d-flex">
           {/* TODO 4.b - Call connectWallet function onClick  */}
+         
           <button onClick={onConnectWallet} className="btn btn-outline-info">
             {/* TODO 5.a - Show account address if wallet is connected */}
             { account ? "Connected" : "Connect Wallet"}
           </button>
+        
         </div>
       </div>
     </div>
