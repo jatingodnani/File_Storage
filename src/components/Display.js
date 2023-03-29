@@ -40,16 +40,22 @@ const Display = ({account,contract}) => {
   };
   return (
     <>
-      <button className="center button" onClick={getdata}>
+      <button className="center button" onClick={getdata} style={{marginTop:"-27px"}}>
         Get Your Data
       </button>
-      <hr className="divider" />
+      <div style={{display:"flex",marginLeft:"27%"}}>
+
+      <hr className="divider" style={{marginRight:"5px",width:"30%", height:"4px"}} /> 
+      <span style={{marginTop:"-22px",fontWeight:"bold"}}>OR</span> 
+      <hr className="divider" style={{marginLeft:"5px",fontSize:"25px", height:"4px",width:"30%"}} />
+      </div>
+      
       <input
         type="text"
         placeholder="Enter Other Address"
         className="address"
       ></input>
-      <button className="center button data" onClick={getdata}>
+      <button className="center button data" onClick={getdata} style={{marginBottom:"50px"}}>
         Get Others Data
       </button>
       <div className="image-list">{data}</div>

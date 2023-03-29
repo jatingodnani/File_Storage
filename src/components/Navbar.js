@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { connectWallet, getAccount } from "../utils/wallet";
-
+import LogoutIcon from '@mui/icons-material/Logout';
 const Navbar = () => {
   const [account, setAccount] = useState("");
 
@@ -22,7 +22,7 @@ const Navbar = () => {
   return (
     <div className="navbar navbar-dark bg-dark fixed-top">
       <div className="container py-2">
-        <a href="/" className="navbar-brand">
+        <a href="/" className="navbar-brand" style={{fontWeight:"bold",fontSize:"30px"}}>
           Built on Tezos
         </a>
         <div className="d-flex">
@@ -32,9 +32,13 @@ const Navbar = () => {
             {/* TODO 5.a - Show account address if wallet is connected */}
             { account ? "Connected" : "Connect Wallet"}
           </button>
-        
+      
         </div>
+       
       </div>
+      {account &&
+      <LogoutIcon style={{color:"white",marginRight:"65px",fontSize:"30px"}}/>
+}
     </div>
   );
 };

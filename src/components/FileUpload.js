@@ -24,6 +24,7 @@ const FileUpload = ({account,contract}) => {
           },
         });
         const ImgHash = `ipfs://${resFile.data.IpfsHash}`;
+            
         await contract.method.add(ImgHash);
     //     //const signer = contract.connect(provider.getSigner());
         // tezos.contract.add(account, ImgHash);

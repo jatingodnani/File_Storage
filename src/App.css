@@ -130,18 +130,21 @@
     margin-bottom: 30px;
   }
   .share {
-    padding: 10px;
+    
     margin-top: 15px;
     vertical-align: center;
     background: #f44336;
-    width: 70px;
-    height: 45px;
+    width: 100px;
+    height: 50px;
     color: white;
     border: none;
+    font-family:'Times New Roman', Times, serif;
+    text-align: center;
     border-radius: 4px;
-    font-size: 15px;
+    font-size: 20px;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    z-index: -1;
+   margin-left: 5%;
+    cursor: pointer;
   }
   
   .share:hover {

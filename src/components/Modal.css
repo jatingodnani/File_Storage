@@ -2,25 +2,31 @@
   box-sizing: border-box;
 }
 .modalBackground {
-    width: 100vw;
+    width: 90vw;
     height: 130vh;
-    background-color: rgba(0, 0, 0, 0.2);
-    position: fixed;
+    background-color:#5555;
+  position: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+  margin-left: 4%;
+    backdrop-filter: blur(10px);
+
+    z-index: 3;
   }
   
   .modalContainer {
     width: 400px;
-    height: 400px;
+    height: 430px;
     border-radius: 12px;
     background-color: white;
     box-shadow: white 5px 5px 15px;
     align-items: center;
     display: flex;
     flex-direction: column;
+    position:relative;
+    z-index: 56;
     margin-bottom: 25%;
   }
   
@@ -79,7 +85,7 @@
  
   .address{
     display: block;
-    height: 50px;
+    height: 45px;
    
   
     text-align: center;
@@ -101,7 +107,7 @@
    margin-top: 15px;
   }
 #selectNumber{
-  height:40px;
+  height:35px;
 
     width: 95%;
     margin-left: 10px;

@@ -31,7 +31,9 @@ const Modal = ({ setModalOpen, contract }) => {
        <div className="modalContainer">
 
          <div className="img" >
-      <VscChromeClose style={{marginLeft:"90%",fontSize:"25px"}} />
+      <VscChromeClose onClick={() => {
+                setModalOpen(false);
+              }} style={{marginLeft:"90%",fontSize:"25px",cursor:"pointer"}} />
           <img   src="https://th.bing.com/th?id=OIP.C9Pnj8rM6NZiLaGCCYRmiwHaFi&w=289&h=216&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" />
          </div>
           <form className="myForm">
@@ -46,14 +48,7 @@ const Modal = ({ setModalOpen, contract }) => {
         
          
          <div className="footer">
-       {  /*  <button
-              onClick={() => {
-                setModalOpen(false);
-              }}
-              id="cancelBtn"
-            >
-              Cancel
-            </button>*/}
+      
             <button  onClick={() => sharing()}>Share</button>
             </div>
           <select id="selectNumber">
